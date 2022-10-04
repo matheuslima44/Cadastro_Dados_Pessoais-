@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario de cadastro</title>
+</head>
+<body>
+    <div class="formcadastro">
+                    <h2>Formulario de cadastro</h2>
+        <form action="cadastro.php" method="get">
+    
+    
+    <fieldset>
+
+        <legend>Dados Pessoais</legend>
+
+            <div class="formentrada">
+                <label for="iNome">Nome: </label> <!-- essa parte serve para a pessoa indentificar o nome dela --> 
+                <input type="text" name="Nome" id="iNome" placeholder="Informe seu nome..." minlength="5" required>
+            </div>  <!--Cada div pode organizar o texto em blocos-->
+
+            <div class="formentrada">
+                <label for="iSenha">Senha:</label>
+                <input type="password" name="senha" id="iSenha" minlength="3" required>
+<!--(maxlength) quer dizer que as caracteristicas maximas usadas é x.-->
+<!--(mixlength) quer dizer que as caracteristicas minimas usadas é x.-->
+<!--(required) quer dizer que o cliente é obrigado a preencher o local indicado.-->
+
+            </div>
+
+            <div class="formentrada">
+                <label for="iEndereço">Endereço</label>
+                <input type="text" name="endereço" id="iEndereço" required>
+            </div>
+
+            <div class="formentrada">
+                <label for="iUf">Uf</label>
+
+                    <optgroup label="Regiao sul">
+                        <option value="SC">SC</option>
+                        <option value="RS">RS</option>
+                    </optgroup>
+
+                    <optgroup label="Regiao sudeste">
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                    </optgroup>
+            </div>
+          
+            <div class="formentrada">
+                    <label for="iTel">Telefone Residencial</label>
+                    <input type="Tel" name="Telefone" id="iTel" placeholder="Ex:1111-11111" pattern="[o-9] {4} [0-9] {5}">
+                    <label for="iWhatsapp">Numero Whatsapp</label>
+                    <input type="Whatsapp" name="Telefone" id="iWhatsapp" pattern="" disabled required>
+<!--(disabled) quer dizer que o comando indicado esta desabilitado-->
+            </div>
+
+            <div class="formentrada">
+                    <label for="iColor">Cor Preferida</label>
+                    <input type="color" name="cor" id="iColor">
+            </div>
+            
+            <div class="formentrada">
+                <label for="iFile">Escolha o Arquivo</label>
+                <input type="file" name="arquivo" id="iFile">
+            </div>
+
+            <div class="botoes">
+                <input type="submit" value="Enviar Cadastro">
+            </div>
+
+</fieldset>
+                <fieldset class="formcad">
+                    <legend>Dados Cobrança</legend>
+                </fieldset>  
+            <form> 
+        </div>
+    </body>
+</html>
